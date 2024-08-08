@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fast File</title>
   <style>
     body {
-      margin: 0; /* 去除默认边距 */
-      overflow: hidden; /* 隐藏滚动条 */
+      margin: 0;
+      padding: 0;
     }
-
-    img {
-      width: 100%; /* 图片宽度占满整个页面 */
-      height: 100%; /* 图片高度占满整个页面 */
-      object-fit: cover; /* 图片缩放以覆盖整个页面 */
+    
+    .full-image {
+      width: 100%;
+      height: 100vh;
+      background-image: url('banner.jpg');
+      background-size: cover;
+      background-position: center;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Fast File</h1>
-  </header>
-  <img src="banner.jpg" alt="Fast File Image">
+  <div class="full-image"></div>
 </body>
 </html>
