@@ -1,23 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <style>
-    body {
-      margin: 0; /* 去除默认边距 */
-      overflow: hidden; /* 隐藏滚动条 */
-    }
-
-    img {
-      width: 100%; /* 图片宽度占满整个页面 */
-      height: 100%; /* 图片高度占满整个页面 */
-      object-fit: cover; /* 图片缩放以覆盖整个页面 */
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen Image</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+        }
+        
+        .bg-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('banner.jpg'); /* 将此替换为您的图片路径 */
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+        
+        .contact-info {
+            color: white;
+            font-size: 24px;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Fast File</h1>
-  </header>
-  <img src="banner.jpg" alt="Fast File Image">
+    <div class="bg-image"></div>
+    <div class="contact-info">Contact us: nowatermarkvideotok@gmail.com</div>
 </body>
 </html>
