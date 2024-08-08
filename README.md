@@ -1,5 +1,3 @@
-# Fast File
-
 <!DOCTYPE html>
 <html>
 <head>
